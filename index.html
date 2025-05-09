@@ -19,22 +19,20 @@
 <div id="map"></div>
 <div class="banner-ad">這裡可放廣告橫幅</div>
 <script>
-// 初始化地圖
 function initMap(){
   const map = new google.maps.Map(document.getElementById('map'),{
     center:{lat:22.6300,lng:120.3000},
     zoom:12
   });
 
-/* ---------- 先不要顯示黃線 ----------
-const yellow = new google.maps.Polyline({
-  path: YellowLineCoords,
-  strokeColor:'#FFC107',
-  strokeWeight:6,
-  map
-});
-------------------------------------- */
-
+  /* ---------- 捷運黃線暫時隱藏 ----------
+  const yellow = new google.maps.Polyline({
+    path: YellowLineCoords,
+    strokeColor:'#FFC107',
+    strokeWeight:6,
+    map
+  });
+  ---------------------------------------- */
 
   // 載入站點標記
   fetch('stations.json')
@@ -45,7 +43,7 @@ const yellow = new google.maps.Polyline({
           position:{lat:pt.lat,lng:pt.lng},
           map,
           title:pt.name,
-          icon: 'icons/' + (pt.type==='station'?'station.svg':'food.svg'),
+          icon:'icons/' + (pt.type==='station'?'station.svg':'food.svg'),
           anchorPoint:new google.maps.Point(14,34)
         });
         const iw = new google.maps.InfoWindow({
@@ -54,7 +52,7 @@ const yellow = new google.maps.Polyline({
         marker.addListener('click',()=>iw.open({anchor:marker,map}));
       });
     });
-}
+}           /* ←←← 這一定要保留，對應 function 起始 */
 </script>
 </body>
 </html>
