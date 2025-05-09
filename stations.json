@@ -18,8 +18,8 @@
   {
   "id": "V1",
   "name": "示範站 · 影片介紹",
-  "lat": 22.6301,
-  "lng": 120.3003,
+  "lat": 22.628951,
+  "lng": 120.294584,
   "type": "station",
   "desc": "<iframe width=\"280\" height=\"158\" src=\"https://www.youtube.com/embed/9OSZyxNxP00\" title=\"YouTube video\" frameborder=\"0\" allowfullscreen></iframe>"
 }
