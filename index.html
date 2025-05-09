@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <title>高雄黃線 + 美食地圖（示範）</title>
+  <style>
+    /* 簡易全螢幕 */
+    html,body,#map{height:100%;margin:0}
+    .banner-ad{position:absolute;top:8px;right:8px;z-index:999;background:#fff;padding:4px 8px;border-radius:4px;box-shadow:0 2px 4px rgba(0,0,0,.2);font-size:12px}
+  </style>
+  <!-- 這裡換成自己的 API Key，並把 referrer 鎖定網域 -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbhrgdhY6QRP0Mg7ah3dmY2VxRoukhplQ&callback=initMap" async defer></script>
+  <!-- 黃線座標 -->
+  <script src="YellowLine.js" defer></script>
+  <!-- 站點資料 -->
+  <script src="stations.json" defer></script>
+</head>
+<body>
+<div id="map"></div>
+<div class="banner-ad">這裡可放廣告橫幅</div>
+<script>
+// 初始化地圖
+function initMap(){
+  const map = new google.maps.Map(document.getElementById('map'),{
+    center:{lat:22.6300,lng:120.3000},
+    zoom:12
+  });
+
+  // 畫捷運黃線
+  const yellow = new google.maps.Polyline({
+    path: YellowLineCoords,
+    strokeColor:'#FFC107',
+    strokeWeight:6,
+    map
+  });
+
+  // 載入站點標記
+  fetch('stations.json')
+    .then(r=>r.json())
+    .then(list=>{
+      list.forEach(pt=>{
+        const marker = new google.maps.Marker({
+          position:{lat:pt.lat,lng:pt.lng},
+          map,
+          title:pt.name,
+          icon: 'icons/' + (pt.type==='station'?'station.svg':'food.svg'),
+          anchorPoint:new google.maps.Point(14,34)
+        });
+        const iw = new google.maps.InfoWindow({
+          content:`<strong>${pt.name}</strong><br>${pt.desc||''}`
+        });
+        marker.addListener('click',()=>iw.open({anchor:marker,map}));
+      });
+    });
+}
+</script>
+</body>
+</html>
