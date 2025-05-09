@@ -17,10 +17,10 @@
   },
   {
     "id": "V1",
-    "name": "示範站 · 影片介紹",
+    "name": "YouTube 測試",
     "lat": 22.628951,
     "lng": 120.294584,
     "type": "station",
-    "desc": "<iframe width=&quot;250&quot; height=&quot;140&quot; src=&quot;https://www.youtube.com/embed/9OSZyxNxP00?playsinline=1&amp;rel=0&quot; title=&quot;YouTube video&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen referrerpolicy=&quot;strict-origin-when-cross-origin&quot;></iframe>"
+    "desc": "<iframe width=\"300\" height=\"168\" src=\"https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?playsinline=1&rel=0\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen referrerpolicy=\"no-referrer\"></iframe>"
   }
 ]
