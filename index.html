@@ -26,13 +26,15 @@ function initMap(){
     zoom:12
   });
 
-  // 畫捷運黃線
-  const yellow = new google.maps.Polyline({
-    path: YellowLineCoords,
-    strokeColor:'#FFC107',
-    strokeWeight:6,
-    map
-  });
+/* ---------- 先不要顯示黃線 ----------
+const yellow = new google.maps.Polyline({
+  path: YellowLineCoords,
+  strokeColor:'#FFC107',
+  strokeWeight:6,
+  map
+});
+------------------------------------- */
+
 
   // 載入站點標記
   fetch('stations.json')
