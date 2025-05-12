@@ -21,7 +21,7 @@
     "lat": 22.628951,
     "lng": 120.294584,
     "type": "station",
-    "desc": "<iframe width=\\\"250\\\" height=\\\"140\\\" src=\\\"https://www.youtube.com/embed/9OSZyxNxP00?playsinline=1&amp;rel=0\\\" title=\\\"YouTube video\\\" frameborder=\\\"0\\\" allow=\\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\\\" allowfullscreen referrerpolicy=\\\"no-referrer\\\"></iframe>"
+    "desc": "<iframe width=&quot;250&quot; height=&quot;140&quot; src=&quot;https://www.youtube.com/embed/9OSZyxNxP00?playsinline=1&amp;rel=0&quot; title=&quot;YouTube video&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen referrerpolicy=&quot;no-referrer&quot;></iframe>"
   },
   {
     "id": "V2",
@@ -29,6 +29,6 @@
     "lat": 22.622616656097446,
     "lng": 120.301645712178684,
     "type": "station",
-    "desc": "<iframe width=\"250\" height=\"140\" src=\"https://www.youtube.com/embed/JRQ4Jal3gqE?playsinline=1&rel=0\" title=\"YouTube video\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen referrerpolicy=\"no-referrer\"></iframe>"
+    "desc": "<iframe width=&quot;250&quot; height=&quot;140&quot; src=&quot;https://www.youtube.com/embed/JRQ4Jal3gqE?playsinline=1&amp;rel=0&quot; title=&quot;YouTube video&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen referrerpolicy=&quot;no-referrer&quot;></iframe>"
   }
 ]
