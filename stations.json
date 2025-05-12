@@ -14,21 +14,5 @@
     "lng": 120.298,
     "type": "food",
     "desc": "人氣美食"
-  },
-  {
-    "id": "V1",
-    "name": "示範站 · 影片介紹",
-    "lat": 22.628951,
-    "lng": 120.294584,
-    "type": "station",
-    "desc": "<iframe width=\"250\" height=\"140\" src=\"https://www.youtube.com/embed/JRQ4Jal3\" title=\"YouTube video\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
-  }
-  {
-    "id": "V2",
-    "name": "示範站 · 影片介紹2",
-    "lat": 22.62001644603494,
-    "lng": 120.29976816593651,
-    "type": "station",
-    "desc": "<iframe width=\\\"250\\\" height=\\\"140\\\" src=\\\"https://www.youtube.com/embed/JRQ4Jal3gqE?playsinline=1&amp;rel=0\\\" title=\\\"YouTube video\\\" frameborder=\\\"0\\\" allow=\\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\\\" allowfullscreen referrerpolicy=\\\"no-referrer\\\"></iframe>"
   }
 ]
