@@ -1,18 +1,26 @@
 [
   {
     "id": "Y1",
-    "name": "坐埔站",
+    "name": "測試站點A",
     "lat": 22.626543,
     "lng": 120.305471,
     "type": "station",
-    "desc": "示範捷運站點"
+    "desc": "此處打備註"
   },
   {
     "id": "F1",
-    "name": "阿元燒烤",
+    "name": "測試站點B",
     "lat": 22.6221,
     "lng": 120.298,
     "type": "food",
-    "desc": "人氣美食"
+    "desc": "此處打備註"
+  },
+  {
+  "id": "V1",
+  "name": "示範站 · 影片介紹",
+  "lat": 22.628951,
+  "lng": 120.294584,
+  "type": "station",
+  "desc": "<iframe width=\"250\" height=\"140\" src=\"https://www.youtube.com/embed/9OSZyxNxP00?playsinline=1&amp;rel=0\" title=\"YouTube video\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen referrerpolicy=\"no-referrer\"></iframe>"
   }
 ]
